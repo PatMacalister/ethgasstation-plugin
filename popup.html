@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="plugin.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="priceList">
+        <div class="item">
+          <div class="label trader">Trader</div>
+          <div class="value" id="trader-value"></div>
+          <div class="info">< ASAP</div>
+        </div>
+        <div class="item">
+          <div class="label fast">Fast</div>
+          <div class="value" id="fast-value"></div>
+          <div class="info">< 2m</div>
+        </div>
+        <div class="item">
+          <div class="label standard">Standard</div>
+          <div class="value" id="standard-value"></div>
+          <div class="info">< 5m</div>
+        </div>
+      </div>
+      <div id="bottomInfo">
+        <div>Recommended Gas Prices in Gwei</div>
+        <button class="btn-clean" id="btn_refresh">
+          <span id="buttonText">REFRESH</span>
+          <div class="loader" id="buttonLoader"></div>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>

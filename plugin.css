@@ -1,0 +1,88 @@
+:root{
+    --light-grey: #888989;
+    --medium-grey: #666666;
+    --dark-grey: #333333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: var(--light-grey);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-size: 1rem;
+    margin-bottom: .5em;
+}
+
+.value {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.info {
+    text-transform: none;
+}
+
+#bottomInfo {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: space-between;
+}
+
+.btn-clean {
+    border: none;
+    padding: .75em 1em;
+    box-shadow: 0 .2em .4em var(--light-grey);
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--light-grey);
+}
+.btn-clean:hover {
+    box-shadow: 0 .2em .3em var(--light-grey);
+    color: var(--medium-grey);
+}
+
+#trader-value {
+    color: #FF558F;
+}
+#fast-value {
+    color: #0237CC;
+}
+#standard-value {
+    color: #2FB999;
+}
+
+.loader {
+    border: .25em solid #f3f3f3;
+    border-top: .25em solid var(--light-grey);
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
